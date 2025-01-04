@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle de tamanho</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+            text-align: center;
+        }
+        div.pai{
+            background-color: lightcoral;
+            display: flex;
+            flex-flow: row nowrap;
+            
+        }
+        div.filho {
+            background-color: lightgreen;
+            padding: 20px;
+            
+            flex-shrink: 1;
+            flex-grow: 0;
+            border: 1px solid black;
+            flex-basis: 200px;
+        }
+
+        div#a{
+            flex: 0 1 200px;
+        }
+        div#b{
+            flex: 2 0 200px;
+        }
+        div#c{
+            flex: 1 2 200px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="pai">
+        <div class="filho" id="a">A</div>
+        <div class="filho" id="b">B</div>
+        <div class="filho" id="c">C</div> 
+    </div>
+</body>
+</html>
