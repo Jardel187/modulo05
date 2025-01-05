@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+        div.pai{
+            background-color: lightblue;
+            width: 100w;
+            height: 100vh;
+            display: flex;
+            flex-flow: row wrap;
+            align-items: center;
+            justify-content: center;
+            align-content: center;
+        }
+        div.filho {
+            background-color: lightcoral;
+            padding: 10px;
+           border: 1px solid black;
+            width: 200px;
+            height: 200px;
+            flex: 1 1 auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="pai">
+        <div class="filho">A</div>
+        <div class="filho">B</div>
+        <div class="filho">C</div>
+    
+    </div>
+</body>
+</html>
